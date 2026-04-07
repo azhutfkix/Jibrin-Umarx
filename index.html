@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jibrin Umar | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(15,23,42,0.9);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 20px;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56,189,248,0.6);
+    }
+
+    .hero h2 { font-size: 32px; }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .socials a {
+      display: block;
+      margin: 10px 0;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jibrin Umar</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="profile.jpg" alt="Jibrin Umar">
+  <h2>Hello, I'm Jibrin 👋</h2>
+  <p>BSc Software Engineering - Level 2</p>
+  <p>Reg No: SIT/SWE/25/0017</p>
+  <button class="btn" onclick="showMessage()">Say Hi</button>
+</div>
+
+<section id="about">
+  <h3>About Me</h3>
+  <p>I am a passionate software engineering student who loves building websites and learning new technologies.</p>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Portfolio Website</h4>
+      <p>A personal website to showcase my skills.</p>
+    </div>
+    <div class="card">
+      <h4>Calculator App</h4>
+      <p>A simple calculator built with JavaScript.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <p>📞 09165559997</p>
+  <p>📧 jibrinumar580@gmail.com</p>
+  <div class="socials">
+    <a href="https://facebook.com/Sanbel__jr" target="_blank">Facebook</a>
+    <a href="https://twitter.com/Sanbel__jr" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/sanbel__jr?igsh=MTV1bHQ4NzM3ZWU1bA==" target="_blank">Instagram</a>
+    <a href="https://linkedin.com/in/Sanbel__jr" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Jibrin Umar</p>
+</footer>
+
+<script>
+  function showMessage() {
+    alert("Nice to meet you Jibrin! 👋");
+  }
+</script>
+
+</body>
+</html>
